@@ -1,0 +1,11 @@
+mango-sylius:
+    admin:
+        form:
+            smsManager:
+                infoText: Lorem ipsum (zkráceně lipsum) je označení pro standardní pseudolatinský text užívaný v grafickém designu a navrhování jako demonstrativní výplňový text při vytváření pracovních ukázek grafických návrhů (např. internetových stránek, rozvržení časopisů či všech druhů reklamních materiálů). Lipsum tak pracovně znázorňuje text v ukázkových maketách (tzv. mock-up) předtím, než bude do hotového návrhu vložen smysluplný obsah.
+                enabled: Zasílat
+                apikey: Apikey
+                gateway: Brána
+                sender: Odesílatel
+                smsText: Text SMS
+                availableVariables: Dostupné SMS text proměnné

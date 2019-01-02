@@ -1,0 +1,7 @@
+sylius_resource:
+    resources:
+        mango_sylius.sms_manager:
+            driver: doctrine/orm
+            classes:
+                model: MangoSylius\SmsManagerPlugin\Entity\SmsManager
+                form: MangoSylius\SmsManagerPlugin\Form\SmsManagerType

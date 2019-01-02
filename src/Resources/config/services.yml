@@ -1,0 +1,34 @@
+services:
+    _defaults:
+        autowire: false
+        autoconfigure: false
+        public: false
+
+    MangoSylius\SmsManagerPlugin\Model\SmsSender:
+        arguments:
+            $logger: '@logger'
+
+    MangoSylius\SmsManagerPlugin\Model\OrderAftreShipmentListener:
+        arguments:
+            $smsSender: '@MangoSylius\SmsManagerPlugin\Model\SmsSender'
+        tags:
+            - name: kernel.event_listener
+              event: sylius.shipment.post_ship
+              method: sendConfirmationSms
+
+    MangoSylius\SmsManagerPlugin\Form\SmsManagerType:
+        tags:
+            - name: form.type
+        arguments:
+            $dataClass: MangoSylius\SmsManagerPlugin\Entity\SmsManager
+            $validationGroups: ['sylius']
+
+    MangoSylius\SmsManagerPlugin\Form\Extension\SmsManagerChannelTypeExtension:
+        tags:
+            - name: form.type_extension
+              extended_type: Sylius\Bundle\ChannelBundle\Form\Type\ChannelType
+
+    MangoSylius\SmsManagerPlugin\Form\Extension\SmsManagerShippingMethodTypeExtension:
+        tags:
+            - name: form.type_extension
+              extended_type: Sylius\Bundle\ShippingBundle\Form\Type\ShippingMethodTranslationType
