@@ -7,13 +7,14 @@
 
 ## Features
 
-xxx
-
-* xxx
+* Use https://smsmanager.cz account to send SMS to customers
+* Inform your customers with a text message that the package has been sent
+* Custom text for every shipping method and language
+* Use variables to personalise the text
 
 ## Installation
 
-1. Run `$ composer require mangoweb-sylius/sylius-sms-manager-plugin`.
+1. Run `$ composer require mangoweb-sylius/sylius-smsmanager-plugin`.
 2. Register `\MangoSylius\SmsManagerPlugin\MangoSyliusSmsManagerPlugin` in your Kernel.
 3. Import `@MangoSyliusSmsManagerPlugin/Resources/config/resources.yml` in the config.yml.
 4. Your Entity `Channel` has to implement `\MangoSylius\SmsManagerPlugin\Model\SmsManagerChannelInterface`. You can use Trait `MangoSylius\SmsManagerPlugin\Model\SmsManagerChannelTrait`.
@@ -24,9 +25,9 @@ For guide to use your own entity see [Sylius docs - Customizing Models](https://
 
 ### Usage
 
-first setup sms manager in channel, than setup sms text in shipping method.
+First enter SMS Manager credentials and other parameters in channel settings, then enter SMS text for each shipping method. If the text is blank, no SMS will be sent.
 
-You can use variables in the SMS text.
+You can use the following variables in the text:
 
 ```
 {{ orderNumber }}
