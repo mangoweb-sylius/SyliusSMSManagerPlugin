@@ -12,6 +12,10 @@
 * Custom text for every shipping method and language
 * Use variables to personalise the text
 
+<p align="center">
+	<img src="https://raw.githubusercontent.com/mangoweb-sylius/SyliusSMSManagerPlugin/master/doc/admin.png"/>
+</p>
+
 ## Installation
 
 1. Run `$ composer require mangoweb-sylius/sylius-smsmanager-plugin`.
@@ -41,6 +45,10 @@ You can use the following variables in the text:
 {{ address.provinceName }}
 {{ address.countryCode }}
 ```
+
+<p align="center">
+	<img src="https://raw.githubusercontent.com/mangoweb-sylius/SyliusSMSManagerPlugin/master/doc/smstext.png"/>
+</p>
 
 ## Development
 
