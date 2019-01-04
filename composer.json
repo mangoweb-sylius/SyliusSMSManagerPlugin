@@ -1,5 +1,5 @@
 {
-	"name": "mangoweb-sylius/sylius-sms-manager-plugin",
+	"name": "mangoweb-sylius/sylius-smsmanager-plugin",
 	"type": "sylius-plugin",
 	"description": "SMS manager plugin for Sylius",
 	"license": "MIT",
