@@ -3,7 +3,7 @@
         <img src="https://avatars0.githubusercontent.com/u/38423357?s=200&v=4"/>
     </a>
 </p>
-<h1 align="center">Sylius SMS Manager Plugin</h1>
+<h1 align="center">SMS Manager Plugin</h1>
 
 ## Features
 
