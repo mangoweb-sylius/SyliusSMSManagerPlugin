@@ -76,14 +76,6 @@ class SmsSender implements SmsSenderInterface
 		$phoneNumber = preg_replace('/\s/', '', $phoneNumber);
 
 		assert($phoneNumber !== null);
-
-		$pattern = '/^(((\+)|(00))42(0|1))?\d{9}$/';
-		if (!preg_match($pattern, $phoneNumber)) {
-			$this->logger->error('No SMS send, bad number format: ' . $phoneNumber);
-
-			return null;
-		}
-
 		return $phoneNumber;
 	}
 
