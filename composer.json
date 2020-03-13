@@ -6,8 +6,7 @@
 	"require": {
 		"ext-curl": "*",
 		"php": "^7.1",
-		"sylius/sylius": "^1.2.5",
-		"symfony/symfony": "^4.1"
+		"sylius/sylius": "^1.2.5"
 	},
 	"require-dev": {
 		"behat/behat": "^3.4",

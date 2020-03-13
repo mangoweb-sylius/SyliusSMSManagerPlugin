@@ -76,6 +76,7 @@ class SmsSender implements SmsSenderInterface
 		$phoneNumber = preg_replace('/\s/', '', $phoneNumber);
 
 		assert($phoneNumber !== null);
+
 		return $phoneNumber;
 	}
 
